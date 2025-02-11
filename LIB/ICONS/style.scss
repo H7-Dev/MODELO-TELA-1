@@ -1,0 +1,220 @@
+@use "variables" as *;
+
+@font-face {
+  font-family: '#{$icomoon-font-family}';
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?b7jj0d');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?b7jj0d#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?b7jj0d') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?b7jj0d') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?b7jj0d##{$icomoon-font-family}') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '#{$icomoon-font-family}' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-plus-small {
+  &:before {
+    content: $icon-plus-small; 
+  }
+}
+.icon-minus {
+  &:before {
+    content: $icon-minus; 
+  }
+}
+.icon-minus-small {
+  &:before {
+    content: $icon-minus-small; 
+  }
+}
+.icon-not-found-alt {
+  &:before {
+    content: $icon-not-found-alt; 
+  }
+}
+.icon-search {
+  &:before {
+    content: $icon-search; 
+  }
+}
+.icon-asterik {
+  &:before {
+    content: $icon-asterik; 
+  }
+}
+.icon-asterik-2 {
+  &:before {
+    content: $icon-asterik-2; 
+  }
+}
+.icon-asterik-3 {
+  &:before {
+    content: $icon-asterik-3; 
+  }
+}
+.icon-medical-star {
+  &:before {
+    content: $icon-medical-star; 
+  }
+}
+.icon-medical-star-2 {
+  &:before {
+    content: $icon-medical-star-2; 
+  }
+}
+.icon-dot-circle {
+  &:before {
+    content: $icon-dot-circle; 
+  }
+}
+.icon-rec {
+  &:before {
+    content: $icon-rec; 
+  }
+}
+.icon-facebook {
+  &:before {
+    content: $icon-facebook; 
+  }
+}
+.icon-facebook-messenger {
+  &:before {
+    content: $icon-facebook-messenger; 
+  }
+}
+.icon-github {
+  &:before {
+    content: $icon-github; 
+  }
+}
+.icon-google {
+  &:before {
+    content: $icon-google; 
+  }
+}
+.icon-microsoft {
+  &:before {
+    content: $icon-microsoft; 
+  }
+}
+.icon-whatsapp {
+  &:before {
+    content: $icon-whatsapp; 
+  }
+}
+.icon-angle-down {
+  &:before {
+    content: $icon-angle-down; 
+  }
+}
+.icon-angle-left {
+  &:before {
+    content: $icon-angle-left; 
+  }
+}
+.icon-angle-right {
+  &:before {
+    content: $icon-angle-right; 
+  }
+}
+.icon-angle-up {
+  &:before {
+    content: $icon-angle-up; 
+  }
+}
+.icon-check {
+  &:before {
+    content: $icon-check; 
+  }
+}
+.icon-circle-user {
+  &:before {
+    content: $icon-circle-user; 
+  }
+}
+.icon-circle-xmark {
+  &:before {
+    content: $icon-circle-xmark; 
+  }
+}
+.icon-cross {
+  &:before {
+    content: $icon-cross; 
+  }
+}
+.icon-crossed-eye {
+  &:before {
+    content: $icon-crossed-eye; 
+  }
+}
+.icon-cross-small {
+  &:before {
+    content: $icon-cross-small; 
+  }
+}
+.icon-e-mail {
+  &:before {
+    content: $icon-e-mail; 
+  }
+}
+.icon-envelope {
+  &:before {
+    content: $icon-envelope; 
+  }
+}
+.icon-eye {
+  &:before {
+    content: $icon-eye; 
+  }
+}
+.icon-fingerprint {
+  &:before {
+    content: $icon-fingerprint; 
+  }
+}
+.icon-interrogation {
+  &:before {
+    content: $icon-interrogation; 
+  }
+}
+.icon-lock {
+  &:before {
+    content: $icon-lock; 
+  }
+}
+.icon-pencil {
+  &:before {
+    content: $icon-pencil; 
+  }
+}
+.icon-plus {
+  &:before {
+    content: $icon-plus; 
+  }
+}
+.icon-trash {
+  &:before {
+    content: $icon-trash; 
+  }
+}
+.icon-user {
+  &:before {
+    content: $icon-user; 
+  }
+}
+

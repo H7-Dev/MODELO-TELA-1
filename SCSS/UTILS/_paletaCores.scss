@@ -1,0 +1,192 @@
+
+// Paleta de cores: Escala de Cinza
+// Esta variável `$grayscale` é um mapa SCSS que armazena uma série de pares de valores de peso e cor.
+// Cada par corresponde a uma sombra específica de cinza que pode ser acessada através de uma chave numérica.
+$grayscale: (
+    0: rgba(0, 0, 0, 0), // Branco puro
+    1: rgba(0, 0, 0, 0.01), // Branco puro
+    2: rgba(0, 0, 0, 0.02), // Branco puro
+    3: rgba(0, 0, 0, 0.03), // Branco puro
+    4: rgba(0, 0, 0, 0.04), // Branco puro
+    5: rgba(0, 0, 0, 0.05), // Branco puro
+    6: rgba(0, 0, 0, 0.06), // Branco puro
+    7: rgba(0, 0, 0, 0.07), // Branco puro
+    8: rgba(0, 0, 0, 0.08), // Branco puro
+    9: rgba(0, 0, 0, 0.09), // Branco puro
+    10: #FFFFFF, // Branco puro
+    20: #FCFCFC, // Quase branco
+    30: #FAFAFA, // Muito muito claro
+    40: #f9f9f9, // Muito claro !!
+    50: rgb(244, 244, 244), // (#F4F4F4)
+    55: rgb(245, 245, 245), // (#f5f5f5)
+    60: rgb(242, 242, 242), // (#F2F2F2)
+    100: rgb(239, 239, 239), // Claro
+    120: rgb(235, 235, 235), // Claro
+    130: rgb(230, 230, 230), // Claro
+    200: rgb(220, 220, 220), // Mais claro
+    300: #BDBDBD, // Claro médio
+    400: #989898, // Médio
+    500: #7C7C7C, // Médio escuro
+    600: #656565, // Mais escuro
+    700: #525252, // Escuro
+    800: #464646, // Muito escuro
+    900: #3D3D3D, // Quase preto
+    950: #292929 // Quase preto máximo
+    
+);
+
+// Paleta de cores: Escala de Roxo
+// Similar ao `$grayscale`, o `$purplescale` armazena cores em uma escala de roxo.
+// As cores variam de roxo claro a roxo escuro, que também são acessíveis através de uma chave numérica.
+$purplescale: (50: #FAF8FF, // Muito claroind
+    100: #EEE8FF, // Claro
+    200: #E0D5FF, // Mais claro
+    300: #C8B4FE, // Claro médio
+    400: #A684FC, // Médio
+    500: #8555F7, // Médio escuro
+    600: #6C33EA, // Mais escuro
+    700: #5922CE, // Escuro
+    800: #4E21AB, // Muito escuro
+    900: #411C87, // Quase preto
+    950: #270764 // Quase preto máximo
+);
+
+
+// Paleta de cores: Persimmon
+$tomato: (
+    50: #fff3f1, // Muito claro
+    100: #ffe4df, // Claro
+    200: #ffcec5, // Mais claro
+    300: #ffac9d, // Claro médio
+    400: #ff7c64, // Médio
+    500: #ff6347, // Médio escuro
+    600: #ed3615, // Mais escuro
+    700: #c8290d, // Escuro
+    800: #a5260f, // Muito escuro
+    900: #882614, // Quase preto
+    950: #4b0f04, // Quase preto máximo
+);
+
+// Função: tomato
+// Retorna uma cor da paleta `$tomato` com base no peso fornecido.
+// @param $weight - O peso da cor desejada da paleta Persimmon.
+// @return cor hexadecimal correspondente ao peso.
+@function tomato($weight) {
+    @return map-get($tomato, $weight);
+}
+
+
+// Função: gray
+// Retorna uma cor do mapa `$grayscale` com base no peso fornecido.
+// @param $weight - O peso da cor desejada da escala de cinza.
+// @return cor hexadecimal correspondente ao peso.
+@function gray($weight) {
+    @return map-get($grayscale, $weight);
+}
+
+// Função: purple
+// Retorna uma cor do mapa `$purplescale` com base no peso fornecido.
+// @param $weight - O peso da cor desejada da escala de roxo.
+// @return cor hexadecimal correspondente ao peso.
+@function purple($weight) {
+    @return map-get($purplescale, $weight);
+}
+
+// Uso da função `gray` para definir a cor de fundo de um elemento.
+// A função é chamada com um peso específico e o valor retornado é usado como a cor de fundo.
+.classe-cinza {
+    background-color: gray(200); // Aplica a cor #DCDCDC
+}
+
+// Uso da função `purple` para definir a cor do texto de um elemento.
+// A função é chamada com um peso específico e o valor retornado é usado como a cor do texto.
+.classe-roxo {
+    color: purple(500); // Aplica a cor #8555F7
+}
+
+
+// Uso da função `tomato` para definir a cor de fundo de um elemento.
+.classe-tomato {
+    background-color: tomato(200); // Aplica a cor #ffcec5
+}
+
+// Uso da função `tomato` para definir a cor do texto de um elemento.
+.classe-tomato-texto {
+    color: tomato(500); // Aplica a cor #ff6347
+}
+
+
+// Estes comentários explicam a finalidade das variáveis e funções, bem como o contexto de uso dentro do código, tornando-o mais compreensível para quem ler ou precisar manter o código no futuro.
+
+
+
+// Paleta de cores: Escala de Verde
+// Esta variável `$greenscale` é um mapa SCSS que armazena uma série de pares de valores de peso e cor.
+// Cada par corresponde a uma sombra específica de verde que pode ser acessada através de uma chave numérica.
+$greenscale: (
+    50: #E6F3D4, // Muito claro
+    100: #D0E8AF, // Claro
+    200: #B6DC7E, // Mais claro
+    300: #9BD14D, // Claro médio
+    400: #85C624, // Médio
+    500: #76A73F, // Médio escuro (cor original)
+    600: #5F8C34, // Mais escuro
+    700: #497128, // Escuro
+    800: #33561C, // Muito escuro
+    900: #1D3B11, // Quase preto
+    950: #0E1F08  // Quase preto máximo
+);
+
+// Função: green
+// Retorna uma cor da paleta `$greenscale` com base no peso fornecido.
+// @param $weight - O peso da cor desejada da paleta Greenscale.
+// @return cor hexadecimal correspondente ao peso.
+@function green($weight) {
+    @return map-get($greenscale, $weight);
+}
+
+// Uso da função `green` para definir a cor de fundo de um elemento.
+.classe-verde {
+    background-color: green(500); // Aplica a cor #76A73F (cor original)
+}
+
+// Uso da função `green` para definir a cor do texto de um elemento.
+.classe-verde-texto {
+    color: green(300); // Aplica a cor #9BD14D
+}
+
+
+// Paleta de cores: Escala de Amarelo
+// Esta variável `$yellowscale` é um mapa SCSS que armazena uma série de pares de valores de peso e cor.
+// Cada par corresponde a uma sombra específica de amarelo que pode ser acessada através de uma chave numérica.
+$yellowscale: (
+    50: #FFF9E5, // Muito claro
+    100: #FFF3CC, // Claro
+    200: #FFE999, // Mais claro
+    300: #FFDF66, // Claro médio
+    400: #FFD633, // Médio
+    500: #FFCC00, // Médio escuro (cor principal)
+    600: #E6B800, // Mais escuro
+    700: #CC9900, // Escuro
+    800: #B37700, // Muito escuro
+    900: #805500, // Quase preto
+    950: #4D3300  // Quase preto máximo
+);
+
+// Função: yellow
+// Retorna uma cor da paleta `$yellowscale` com base no peso fornecido.
+// @param $weight - O peso da cor desejada da paleta Yellowscale.
+// @return cor hexadecimal correspondente ao peso.
+@function yellow($weight) {
+    @return map-get($yellowscale, $weight);
+}
+
+// Uso da função `yellow` para definir a cor de fundo de um elemento.
+.classe-amarelo {
+    background-color: yellow(500); // Aplica a cor #FFCC00 (cor principal)
+}
+
+// Uso da função `yellow` para definir a cor do texto de um elemento.
+.classe-amarelo-texto {
+    color: yellow(700); // Aplica a cor #CC9900
+}
