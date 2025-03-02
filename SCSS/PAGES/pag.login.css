@@ -1,0 +1,354 @@
+.pag-login {
+  background-color: white;
+  min-height: -webkit-fill-available;
+  min-width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: normal;
+  align-items: normal;
+  align-content: normal;
+  grid-area: pagina;
+}
+.pag-login > div.doca-a {
+  flex-basis: 50%;
+  height: 100%;
+}
+.pag-login > div.doca-a > form {
+  display: grid;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: normal;
+  align-items: normal;
+  align-content: normal;
+  grid-template-rows: auto auto auto 1fr;
+  grid-template-rows: min-content min-content auto 1fr;
+  height: 100%;
+  width: 100%;
+  padding: 0 20%;
+}
+.pag-login > div.doca-a > form > div.pre-header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.72em;
+}
+.pag-login > div.doca-a > form > div.pre-header > .btn-ma {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.45em;
+  border: none;
+  border-radius: 50%;
+  background-color: #6200ea;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+.pag-login > div.doca-a > form > div.pre-header > .btn-ma:hover {
+  background-color: #3700b3;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+.pag-login > div.doca-a > form > div.pre-header > .btn-ma:active {
+  background-color: #bb86fc;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+}
+.pag-login > div.doca-a > form > div.pre-header > .btn-ma:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(98, 0, 234, 0.3);
+}
+.pag-login > div.doca-a > form > div.header {
+  display: flex;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+  overflow: hidden;
+}
+.pag-login > div.doca-a > form > div.header > div.logo {
+  display: flex;
+  width: 100%;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75em;
+  gap: 0.75em;
+}
+.pag-login > div.doca-a > form > div.header > div.logo > i {
+  font-size: 1.5em;
+  color: #3700b3;
+}
+.pag-login > div.doca-a > form > div.header > div.logo > span.titulo {
+  font-family: Oswald-ExtraLight !important;
+  font-family: YsabeauSC-ExtraBold !important;
+  font-size: 1.5em;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #3700b3;
+}
+.pag-login > div.doca-a > form > div.pos-header {
+  background-color: lightcyan;
+}
+.pag-login > div.doca-a > form > div.main {
+  padding: 4em 0 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+.pag-login > div.doca-a > form > div.main > div.conta {
+  display: grid;
+  grid-template-columns: auto 2fr auto;
+  grid-template-rows: 1fr;
+  height: -moz-fit-content;
+  height: fit-content;
+  border: 1px solid rgb(235, 235, 235);
+  align-items: center;
+  padding: 0.45em;
+  gap: 0.45em;
+}
+.pag-login > div.doca-a > form > div.main > div.conta > button.btn-ma {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.45em;
+  border: none;
+  border-radius: 4px;
+  background-color: #6200ea;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, box-shadow 0.3s;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.pag-login > div.doca-a > form > div.main > div.conta > button.btn-ma:hover {
+  background-color: #3700b3;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+.pag-login > div.doca-a > form > div.main > div.conta > button.btn-ma:active {
+  background-color: #bb86fc;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+}
+.pag-login > div.doca-a > form > div.main > div.conta > button.btn-ma:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(98, 0, 234, 0.3);
+}
+.pag-login > div.doca-a > form > div.main > div.conta > button.btn-ma > i {
+  font-size: 2em;
+}
+.pag-login > div.doca-a > form > div.main > div.conta > div.usuario {
+  display: flex;
+  flex-direction: column;
+}
+.pag-login > div.doca-a > form > div.main > div.conta > div.usuario > span.titulo {
+  font-size: 0.85em;
+  color: black;
+}
+.pag-login > div.doca-a > form > div.main > div.conta > div.usuario > span.subtitulo {
+  font-size: 0.98em;
+  color: darkslategray;
+  font-weight: 700;
+}
+.pag-login > div.doca-a > form > div.main > div.conta > button.btn-trocar-conta {
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+.pag-login > div.doca-a > form > div.main > div.conta > button.btn-trocar-conta:hover {
+  text-decoration: underline;
+}
+.pag-login > div.doca-a > form > div.main > div.conta > button.btn-trocar-conta > span.titulo {
+  color: #6200ea;
+  font-weight: 700;
+}
+.pag-login > div.doca-a > form > div.main .lb-ma {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+.pag-login > div.doca-a > form > div.main .lb-ma > .titulo {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 8px;
+}
+.pag-login > div.doca-a > form > div.main .lb-ma > .container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 8px;
+  transition: border-color 0.3s;
+}
+.pag-login > div.doca-a > form > div.main .lb-ma > .container:focus-within {
+  border-color: #6200ea;
+}
+.pag-login > div.doca-a > form > div.main .lb-ma > .container > .btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6200ea;
+  transition: background-color 0.3s, color 0.3s;
+  border-radius: 8px;
+}
+.pag-login > div.doca-a > form > div.main .lb-ma > .container > .btn:hover {
+  background-color: rgba(98, 0, 234, 0.1);
+}
+.pag-login > div.doca-a > form > div.main .lb-ma > .container > .btn:focus {
+  outline: none;
+  background-color: rgba(98, 0, 234, 0.2);
+}
+.pag-login > div.doca-a > form > div.main .lb-ma > .container > .btn > i {
+  font-size: 2em;
+}
+.pag-login > div.doca-a > form > div.main .lb-ma > .container > .input-ma {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  padding: 8px;
+  color: #333;
+}
+.pag-login > div.doca-a > form > div.main .lb-ma > .container > .input-ma::-moz-placeholder {
+  color: #aaa;
+}
+.pag-login > div.doca-a > form > div.main .lb-ma > .container > .input-ma::placeholder {
+  color: #aaa;
+}
+.pag-login > div.doca-a > form > div.main .lb-ma > .waring-text {
+  margin-top: 8px;
+}
+.pag-login > div.doca-a > form > div.main .lb-ma > .waring-text > .aviso {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #d32f2f;
+}
+.pag-login > div.doca-a > form > div.main .lb-ma > .waring-text > .aviso > .icon-triangle-warning {
+  margin-right: 8px;
+  font-size: 18px;
+}
+.pag-login > div.doca-a > form > div.main .lb-ma > .waring-text > .aviso > .titulo.required {
+  font-weight: 500;
+}
+.pag-login > div.doca-a > form > div.main .lb-ma > .waring-text .ocultar {
+  display: none;
+}
+.pag-login > div.doca-a > form > div.main > .btn-entrar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75em 1.5em;
+  border: none;
+  border-radius: 4px;
+  background-color: #6200ea;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+.pag-login > div.doca-a > form > div.main > .btn-entrar > .titulo {
+  margin: 0;
+}
+.pag-login > div.doca-a > form > div.main > .btn-entrar:hover {
+  background-color: #3700b3;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+.pag-login > div.doca-a > form > div.main > .btn-entrar:active {
+  background-color: #bb86fc;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+}
+.pag-login > div.doca-a > form > div.main > .btn-entrar:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(98, 0, 234, 0.3);
+}
+.pag-login > div.doca-a > form > div.main > .btn-esqueceu-senha {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75em 1.4em;
+  border: 2px solid #6200ea;
+  border-radius: 4px;
+  background-color: transparent;
+  color: #6200ea;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+}
+.pag-login > div.doca-a > form > div.main > .btn-esqueceu-senha > .titulo {
+  margin: 0;
+}
+.pag-login > div.doca-a > form > div.main > .btn-esqueceu-senha:hover {
+  background-color: rgba(98, 0, 234, 0.1);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+.pag-login > div.doca-a > form > div.main > .btn-esqueceu-senha:active {
+  background-color: rgba(98, 0, 234, 0.2);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+.pag-login > div.doca-a > form > div.main > .btn-esqueceu-senha:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(98, 0, 234, 0.3);
+}
+.pag-login > div.doca-a > form > div.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.72em 0.72em 1.2em 0.72em;
+}
+.pag-login > div.doca-a > form > div.footer > button.btn-outra-conta {
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+.pag-login > div.doca-a > form > div.footer > button.btn-outra-conta:hover {
+  text-decoration: underline;
+}
+.pag-login > div.doca-a > form > div.footer > button.btn-outra-conta > span.titulo {
+  color: #6200ea;
+  font-weight: 700;
+}
+.pag-login > div.doca-a > form > div.footer > a.btn-link-trocar-conta {
+  outline: none;
+  border: none;
+  padding: 0.45em 0.75em;
+  border-radius: 4px;
+  font-size: 0.75em;
+  text-decoration: none;
+}
+.pag-login > div.doca-a > form > div.footer > a.btn-link-trocar-conta:hover {
+  background-color: rgba(98, 0, 234, 0.1019607843);
+  background-color: rgba(98, 0, 234, 0.1019607843);
+  -webkit-text-decoration: underline 0.75px #6200ea;
+          text-decoration: underline 0.75px #6200ea;
+}
+.pag-login > div.doca-a > form > div.footer > a.btn-link-trocar-conta > span.titulo {
+  color: #6200ea;
+  font-weight: 700;
+}
+.pag-login > div.doca-b {
+  flex-basis: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pag-login > div.doca-b > svg {
+  width: 60%;
+}/*# sourceMappingURL=pag.login.css.map */

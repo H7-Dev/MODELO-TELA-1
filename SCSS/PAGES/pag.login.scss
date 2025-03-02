@@ -1,0 +1,408 @@
+.pag-login {
+    background-color: white;
+    min-height: -webkit-fill-available;
+    min-width: 100%;
+    //
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: normal;
+    align-items: normal;
+    align-content: normal;
+    grid-area: pagina;
+    //
+
+    > div.doca-a {
+        flex-basis: 50%;
+        height: 100%;
+
+        > form {
+            display: grid;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: normal;
+            align-items: normal;
+            align-content: normal;
+            //
+            grid-template-rows: auto auto auto 1fr;
+            grid-template-rows: min-content min-content auto 1fr;
+            // background-color: silver;
+            height: 100%;
+            width: 100%;
+            padding: 0 20%;
+            > div.pre-header {
+                display: flex;
+                justify-content: flex-end;
+                //
+                // background-color: lightgreen;
+                padding: 0.72em;
+
+                // Estilo do botão seguindo o Material Design
+                > .btn-ma {
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 0.45em;
+                    border: none;
+                    border-radius: 50%;
+                    background-color: #6200ea; // Cor de fundo padrão
+                    color: #ffffff; // Cor do texto
+                    font-size: 14px;
+                    font-weight: 500;
+                    text-transform: uppercase;
+                    cursor: pointer;
+                    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+                    transition:
+                        background-color 0.3s,
+                        box-shadow 0.3s;
+
+                    // Efeito ao passar o mouse sobre o botão
+                    &:hover {
+                        background-color: #3700b3; // Cor de fundo ao passar o mouse
+                        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+                    }
+                    // Efeito ao pressionar o botão
+                    &:active {
+                        background-color: #bb86fc; // Cor de fundo ao pressionar
+                        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+                    }
+                    // Efeito de foco no botão
+                    &:focus {
+                        outline: none;
+                        box-shadow: 0 0 0 4px rgba(98, 0, 234, 0.3); // Cor de foco
+                    }
+                }
+            }
+            > div.header {
+                display: flex;
+                min-height: fit-content;
+                overflow: hidden;
+
+                //
+                // background-color: lightcoral;
+                > div.logo {
+                    display: flex;
+                    // background-color: darkgray;
+                    width: 100%;
+                    min-height: fit-content;
+                    overflow: hidden;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 0.75em;
+                    gap: 0.75em;
+                    > i {
+                        font-size: 1.5em;
+                        color: #3700b3;
+
+                    }
+                    > span.titulo {
+                        font-family: Oswald-ExtraLight !important;
+                        font-family: YsabeauSC-ExtraBold !important;
+                        font-size: 1.5em;
+                        letter-spacing: 0.15em;
+                        text-transform: uppercase;
+                        color: #3700b3;
+                    }
+                }
+            }
+            > div.pos-header {
+                background-color: lightcyan;
+            }
+            > div.main {
+                // background-color: lightcoral;
+                padding: 4em 0 0 0;
+                display: flex;
+                flex-direction: column;
+                gap: 2em;
+
+                > div.conta {
+                    display: grid;
+                    grid-template-columns: auto 2fr auto;
+                    grid-template-rows: 1fr;
+                    height: fit-content;
+                    //
+                    border: 1px solid rgb(235, 235, 235);
+                    align-items: center;
+                    padding: 0.45em;
+                    gap: 0.45em;
+                    > button.btn-ma {
+                        display: inline-flex;
+                        align-items: center;
+                        padding: 0.45em;
+                        border: none;
+                        border-radius: 4px;
+                        background-color: #6200ea; // Cor de fundo padrão
+                        color: #ffffff; // Cor do texto
+                        font-size: 14px;
+                        font-weight: 500;
+                        text-transform: uppercase;
+                        cursor: pointer;
+                        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+                        transition:
+                            background-color 0.3s,
+                            box-shadow 0.3s;
+
+                        height: fit-content;
+                        width: fit-content;
+
+                        // Efeito ao passar o mouse sobre o botão
+                        &:hover {
+                            background-color: #3700b3; // Cor de fundo ao passar o mouse
+                            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+                        }
+                        // Efeito ao pressionar o botão
+                        &:active {
+                            background-color: #bb86fc; // Cor de fundo ao pressionar
+                            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+                        }
+                        // Efeito de foco no botão
+                        &:focus {
+                            outline: none;
+                            box-shadow: 0 0 0 4px rgba(98, 0, 234, 0.3); // Cor de foco
+                        }
+                        > i {
+                            font-size: 2em;
+                        }
+                    }
+                    > div.usuario {
+                        display: flex;
+                        flex-direction: column;
+                        > span.titulo {
+                            font-size: 0.85em;
+                            color: black;
+                        }
+                        > span.subtitulo {
+                            font-size: 0.98em;
+                            color: darkslategray;
+                            font-weight: 700;
+                        }
+                    }
+
+                    > button.btn-trocar-conta {
+                        outline: none;
+                        border: none;
+                        background-color: transparent;
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                        > span.titulo {
+                            color: #6200ea;
+                            font-weight: 700;
+                        }
+                    }
+                }
+                .lb-ma {
+                    display: flex;
+                    flex-direction: column;
+                    margin-bottom: 16px;
+                    font-family: "Roboto", sans-serif;
+                    font-weight: 700;
+
+                    > .titulo {
+                        font-size: 16px;
+                        color: #333;
+                        margin-bottom: 8px;
+                    }
+
+                    > .container {
+                        display: flex;
+                        align-items: center;
+                        position: relative;
+                        border: 1px solid #ccc;
+                        border-radius: 4px;
+                        padding: 8px;
+                        transition: border-color 0.3s;
+
+                        &:focus-within {
+                            border-color: #6200ea;
+                        }
+                        > .btn {
+                            background: none;
+                            border: none;
+                            cursor: pointer;
+                            padding: 4px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            color: #6200ea;
+                            transition:
+                                background-color 0.3s,
+                                color 0.3s;
+                            border-radius: 8px;
+                            &:hover {
+                                background-color: rgba(98, 0, 234, 0.1);
+                            }
+
+                            &:focus {
+                                outline: none;
+                                background-color: rgba(98, 0, 234, 0.2);
+                            }
+
+                            > i {
+                                font-size: 2em;
+                            }
+                        }
+
+                        > .input-ma {
+                            flex: 1;
+                            border: none;
+                            outline: none;
+                            font-size: 16px;
+                            padding: 8px;
+                            color: #333;
+
+                            &::placeholder {
+                                color: #aaa;
+                            }
+                        }
+                    }
+
+                    > .waring-text {
+                        margin-top: 8px;
+
+                        > .aviso {
+                            display: flex;
+                            align-items: center;
+                            font-size: 14px;
+                            color: #d32f2f;
+
+                            > .icon-triangle-warning {
+                                margin-right: 8px;
+                                font-size: 18px;
+                            }
+
+                            > .titulo.required {
+                                font-weight: 500;
+                            }
+                        }
+
+                        .ocultar {
+                            display: none;
+                        }
+                    }
+                }
+                > .btn-entrar {
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 0.75em 1.5em;
+                    border: none;
+                    border-radius: 4px;
+                    background-color: #6200ea; // Cor primária
+                    color: #ffffff; // Cor do texto
+                    font-size: 14px;
+                    font-weight: 500;
+                    text-transform: uppercase;
+                    cursor: pointer;
+                    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+                    transition:
+                        background-color 0.3s,
+                        box-shadow 0.3s;
+
+                    > .titulo {
+                        margin: 0;
+                    }
+
+                    &:hover {
+                        background-color: #3700b3; // Cor primária escura
+                        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+                    }
+
+                    &:active {
+                        background-color: #bb86fc; // Cor primária clara
+                        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+                    }
+
+                    &:focus {
+                        outline: none;
+                        box-shadow: 0 0 0 4px rgba(98, 0, 234, 0.3); // Efeito de foco
+                    }
+                }
+                > .btn-esqueceu-senha {
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 0.75em 1.4em;
+                    border: 2px solid #6200ea; // Borda visível com cor primária
+                    border-radius: 4px;
+                    background-color: transparent; // Fundo transparente
+                    color: #6200ea; // Cor do texto correspondente à cor da borda
+                    font-size: 14px;
+                    font-weight: 500;
+                    text-transform: uppercase;
+                    cursor: pointer;
+                    transition:
+                        background-color 0.3s,
+                        color 0.3s,
+                        box-shadow 0.3s;
+
+                    > .titulo {
+                        margin: 0;
+                    }
+
+                    &:hover {
+                        background-color: rgba(98, 0, 234, 0.1); // Leve destaque no fundo ao passar o mouse
+                        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); // Sombra ao passar o mouse
+                    }
+
+                    &:active {
+                        background-color: rgba(98, 0, 234, 0.2); // Fundo mais escuro ao pressionar
+                        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); // Sombra reduzida ao pressionar
+                    }
+
+                    &:focus {
+                        outline: none;
+                        box-shadow: 0 0 0 4px rgba(98, 0, 234, 0.3); // Efeito de foco
+                    }
+                }
+            }
+            > div.footer {
+                display: flex;
+                justify-content: space-between;
+                padding: 0.72em 0.72em 1.2em 0.72em;
+
+                > button.btn-outra-conta {
+                    outline: none;
+                    border: none;
+                    background-color: transparent;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                    > span.titulo {
+                        color: #6200ea;
+                        font-weight: 700;
+                    }
+                }
+                > a.btn-link-trocar-conta {
+                    outline: none;
+                    border: none;
+                    // background-color: red;
+                    padding: 0.45em 0.75em;
+                    border-radius: 4px;
+                    font-size: 0.75em;
+                    text-decoration: none;
+
+                    &:hover {
+                        background-color: #6200ea1a;
+                        background-color: #6200ea1a;
+                        text-decoration: underline 0.75px #6200ea;
+                    }
+                    > span.titulo {
+                        color: #6200ea;
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+    }
+    > div.doca-b {
+        // background-color: silver;
+        flex-basis: 50%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        > svg {
+            width: 60%;
+        }
+    }
+}

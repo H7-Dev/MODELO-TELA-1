@@ -6,138 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tela 1</title>
     <link rel="stylesheet" href="SCSS/leiaute.css">
+    <link rel="stylesheet" href="SCSS/PAGES/pag.login.css">
     <link rel="stylesheet" href="LIB/ICONS/style.css">
 </head>
 <body>
-    <div class="container-pop-up">
-        <div class="doca-left" data-hotkey="1">
-            <div class="doca-left-header">
-                <label class="lb-ma" for="in_search">
-                    <span class="titulo">Search</span>
-                    <div class="container">
-                        <button class="btn ocultar" type="button"><i class="ocultar"></i></button>
-                        <i class="icon "></i>
-                        <input class="input-ma" id="in_search" name="in_search" type="text"
-                            placeholder="Digitar código ou item">
-                        <button type="button" class="btn ">
-                            <i class="icon-search"></i>
-                        </button>
-                    </div>
-                </label>
-            </div>
-            <div class="doca-left-main" data-status="0">
-                <div class="splash-screen post_icon ocultar"></div>
-                <div class="container-itens ">
-                    <div class="no_data_icon"></div>
-                </div>
-            </div>
-        </div>
-        <div class="doca-right" >
-            <div class="doca-right-header">
-                <span class="rotulo">Lista de item Adicionados</span>
-            </div>
-            <div class="doca-right-main">
-                <div class="table-container">
-                    <div class="table-wrapper">
-                        <table class="table">
-                            <thead>
-                                <tr >
-                                    <th class="th-descricao">Descrição</th>
-                                    <th class="th-cod-interno-iten" >Código</th>
-                                    <th class="th-quantidade-iten" >QTD</th>
-                                    <th class="td-action-delete">Action</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-            <div class="doca-right-footer">
-                    <label class="lb-select " data-correlator="1" data-hotkey="0" data-value="">
-                        <span class="rotulo">Cliente</span>
-                        <div class="container">
-                            <input type="text" id="input-cliente" class="input-ma" placeholder="Cliente"
-                                autocomplete="off"  required/>
-                            <button type="button" class="btn btn-teste"><i class="icon-plus"></i></button>
-                        </div>
-                    </label>
-                    <ul class="lb-select-options" id="listar-clientes" data-correlator="1">
-                        <li class="md-option" data-value="ARCELOR">ArKa</li>
-                        <li class="md-option" data-value="ARCELOR">ArKa Solar</li>
-                        <li class="md-option" data-value="ARCELOR">ARCELOR</li>
-                        <li class="md-option" data-value="ARCELOR MITAL">ARCELOR MITAL</li>
-                        <li class="md-option" data-value="VALE">VALE</li>
-                        <li class="md-option" data-value="LT GONÇALVES">LT GONÇALVES</li>
-                        <li class="md-option" data-value="FORTE ENGENHARIA">FORTE ENGENHARIA</li>
-                        <li class="md-option" data-value="Vale do Rio Doce">Vale do Rio Doce</li>
-                        <li class="md-option" data-value="VIX">VIX</li>
-                        <li class="md-option" data-value="FORTE ENGENHARIA">FORTE ENGENHARIA</li>
-                        <li class="md-option" data-value="FORTE ENGENHARIA">FORTE ENGENHARIA</li>
-                        <li class="md-option" data-value="FORTE ENGENHARIA">FORTE ENGENHARIA</li>
-                        <li class="md-option" data-value="FORTE ENGENHARIA">FORTE ENGENHARIA</li>
-                    </ul>
-                    <label class="lb-select" data-correlator="2" data-hotkey="0" data-value="">
-                        <span class="rotulo">N° De Contrato</span>
-                        <div class="container">
-                            <input type="text" id="input-contrato" class="input-ma" placeholder="Cliente" 
-                                autocomplete="off" />
-                            <button type="button" class="btn "><i class="icon-plus"></i></button>
-                        </div>
-                    </label>
-                    <ul class="lb-select-options" id="listar-contratos"  data-correlator="2">
-                        <li class="md-option" data-value="1">0101</li>
-                        <li class="md-option" data-value="2">0102</li>
-                        <li class="md-option" data-value="3">0103</li>
-                        <li class="md-option" data-value="4">0104</li>
-                        <li class="md-option" data-value="5">0105</li>
-                        <li class="md-option" data-value="6">0206</li>
-                        <li class="md-option" data-value="7">0207</li>
-                        <li class="md-option" data-value="8">0208</li>
-                        <li class="md-option" data-value="9">0209</li>
-                        <li class="md-option" data-value="10">0210</li>
-                    </ul>
-                </div>
-        </div>
-        <!-- <div class="overlay-popup ocultar"> -->
-        <div class="overlay-popup ocultar" data-hotkey="0" data-codigo-interno="" data-item-selected="" data-numero-list="" data-img-iten="">
-            <div class="container">
-                <div class="container-header">
-                    <span class="rotulo titulo-iten-quantidade">Rótulo</span>
-                </div>
-                <div class="container-main">
-                    <label class="lb-ma" for="in_quantidade-item">
-                        <span class="titulo">Quantidade</span>
-                        <div class="container">
-                            <button class="btn ocultar" type="button"><i class="ocultar"></i></button>
-                            <i class="icon "></i>
-                            <input class="input-ma" id="in_quantidade-item" name="in_quantidade-item" type="text"
-                                placeholder="0">
-                            <button type="button" class="btn ocultar">
-                                <i class="icon-search"></i>
-                            </button>
-                        </div>
-                    </label>
-                </div>
-                <div class="container-footer">
-                    <button class="btn-add btn " type="button">
-                        <span class="titulo">Adicionar (Pesquisar) (Ctrl+Enter)</span>
-                    </button>
-                    <button class="btn-add-continuar btn btn-secundario " type="button">
-                        <span class="titulo">Adicionar e Continuar (Enter)</span>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <script src="./JS/nav.teclas.functions.js"></script>
-    <script src="./JS/nav.interface.js"></script>
-    <script src="./JS/itens.reander.json.js"></script>
-    <!--  -->
-
+            <li><a href="#" data-page="home">Home</a></li>
+            <li><a href="#" data-page="login">Login</a></li>
+            <br>
+            <!-- <button id="testar">Mudar Sessão estatus</button> -->
+    <main class="div-main-app">
+        
+    </main>
+    <script src="./JS/auth.js"></script> <!-- Verificação de login -->
     <script src="./JS/app.js"></script>
-    <!-- <script src="./JS/svg-manager.js"></script> -->
+    <script src="./JS/svg-manager.js"></script>
     <script src="./JS/svg.call.icon.js"></script>
 </body>
 
